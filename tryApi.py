@@ -13,4 +13,3 @@ while True:
 	term = search()
 	print term[0]
 	print term[1]
-	sleep(0.1)
