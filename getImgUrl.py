@@ -1,4 +1,4 @@
-#!/usr/bin/env 
+#!/home2/silviolo/python/bin/python 
 # -*- coding: utf-8 -*-
 
 # Get first image url from Google query
