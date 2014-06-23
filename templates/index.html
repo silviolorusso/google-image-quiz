@@ -1,0 +1,53 @@
+$def with (rterm, imgUrl)
+
+<!doctype html>
+<html>
+<head>
+	<title>Google Image Quiz</title>
+	<meta content="static/google_favicon_128.png" itemprop="image">
+	<meta name="description" content="Reverse engineering Google.">
+	<meta name="keywords" content="google, quiz, fun, enjoy, trivia">
+	<meta name="author" content="Silvio Lorusso">
+	<meta name="nothingimportanttrustme" content="$rterm">
+
+	<meta property="og:title" content="Google Image Quiz" />
+	<meta property="og:type" content="website" />
+	<meta property="og:type" content="Guess the query!" />
+	<meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
+	<meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
+
+	<script src="static/jquery-1.11.1.min.js"></script>
+	<script src="static/quiz.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/style.css"/> 
+</head>
+<body>
+	<header>
+		<a href="/">
+			<div title="Google Image Quiz" id="hplogo"style="background:url(static/logo11w.png) no-repeat;background-size:269px 95px;height:95px;width:269px"><div nowrap="" style="color:#1370E5;font-size:16px;font-weight:bold;position:relative;right:115px;float:right;top:70px"><span>image quiz</span></div></div>
+		</a>
+	</header>
+	<div id="pic">
+		<a href="$imgUrl" target="_blank">
+			<img src="$imgUrl" />
+		</a>
+	</div>
+	<section>
+		<p>Can you guess the Google query for the image above?</p>
+		<form id="form">
+			<input class="lsb" style="height:27px" value="Try this query" name="btnG" type="button" id="try">
+			</br>
+			<input type="button" value="Hint" id="hint">
+			<input type="button" value="I don't feel lucky" id="noluck">
+		</form>
+		<div id="smc" style="display: block;">
+			<div style="text-align:center;width:504px;height:30px"> 	<input class="ksb _dF" value="Show a different image" id="smb" data-lt="Loading" type="button">
+			</div>
+		</div>
+	</section>
+	<footer>
+		<a href="http://silviolorusso.com/">Silvio Lorusso</a>, 
+		2014
+	</footer>
+	<script src="static/quiz.js"></script>
+</body>
+</html>
