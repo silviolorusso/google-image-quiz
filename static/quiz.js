@@ -39,8 +39,9 @@ $('.query').on('focus', function() {
 	field = $(this);
 	$('html').keydown(function(e){
     if ((e.keyCode == 8) && (field.val() === '')) {
-    	if (!field.hasClass('hint')) {};
-    	field.prev().focus();
+    	if (!field.hasClass('hint')) {
+    		field.prev().focus();
+    	};
     }
 	}) 
 });
