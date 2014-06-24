@@ -1,12 +1,5 @@
+- favicon
 - split list into several files to go faster
-- hover button
 - social
-- sticky footer
-
-domain?
-google-image-quiz.edu
-google-image-quiz.info
-google-image-quiz.biz
-
-google-image-quiz.net
+- google-image-quiz.net
 
