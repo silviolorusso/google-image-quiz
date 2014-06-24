@@ -17,6 +17,7 @@ def searchDb():
 		cur = conn.cursor()
 		cur.execute("SELECT * FROM Queries")
 		rows = cur.fetchall()
+		rand = random.choice(rows)
 		return([rows[0][1],rows[0][2]])
 
 # TEST
