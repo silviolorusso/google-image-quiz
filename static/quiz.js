@@ -23,7 +23,9 @@ $.fn.selectRange = function(start, end) {
     });
 };
 $('.query').on('input', function() {
-	$(this).next().selectRange(0,1);
+	if ($(this).val() !== '') { 
+		$(this).next().selectRange(0,1);
+	}
 });
 
 // get user query

@@ -3,4 +3,3 @@
 - cronjob
 - check broken links in mkDb.py (check)
 - check if there is a letter in query before going to next
-- social in primo piano
