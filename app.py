@@ -4,7 +4,7 @@
 # MODULES
 
 import web
-from getImgUrl import randWord search
+from getImgUrl import randWord, search
 from getImgUrlDb import searchDb
 
 render = web.template.render('templates/')
