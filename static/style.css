@@ -31,11 +31,33 @@ body {
 }
 
 #try {
-	background-image: -webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#4787ed));
-	background-color: #4d90fe;
-	background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
-	background-image: linear-gradient(top,#4d90fe,#4787ed);
-	border: 1px solid #3079ed;
+	border: 1px solid transparent;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	height: 30px;
+	margin: 0;
+	outline: none;
+	padding: 0 0;
+	width: 60px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #4285f4;
+	background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+	background: linear-gradient(top,#4387fd,#4683ea);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4387fd,endColorstr=#4683ea,GradientType=1);
+
+	cursor: default!important;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 29px;
+	min-width: 54px;
+	text-align: center;
+	text-decoration: none!important;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-user-select: none;
 }
 
 .hint {
