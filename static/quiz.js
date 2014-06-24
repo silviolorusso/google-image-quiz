@@ -38,8 +38,8 @@ $('.query').on('focus', function() {
 $('.query').on('focus', function() {
 	field = $(this);
 	$('html').keyup(function(e){
-    if ((e.keyCode == 46) && ($(this).val() === '')) {
-    	alert('Delete Key Pressed');
+    if ((e.keyCode == 8) && ($(this).val() === '')) {
+    	alert('Backspace');
     }
 	}) 
 });
