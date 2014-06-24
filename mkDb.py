@@ -1,17 +1,14 @@
 #!/home2/silviolo/python/bin/python 
 # -*- coding: utf-8 -*-
 
-# Get first image url from Google query
+# Create Db with query, image url
 
 # MODULES
 
+import sqlite3
 import urllib2
 import simplejson
-import random
-
-# VARIABLES
-
-searchTerm = 'parrot'
+from time import sleep
 
 # FUNCTIONS
 
@@ -22,11 +19,9 @@ def getWord():
 		# remove /n 
 		line = line.rstrip()
 		words.append(line)
-	rand = random.choice(words)
-	return(rand)
+	return words
 
-def search():
-	term = getWord()
+def search(term):
 	fetcher = urllib2.build_opener()
 	searchUrl = "http://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=" + term
 	f = fetcher.open(searchUrl)
@@ -49,12 +44,37 @@ def search():
 		return([rterm, imgUrl])
 	except IndexError:
 		print('Error: no images found!')
-		search()
-	except TypeError:
-		print('Error: no images found!')
 		return
 
-# TEST
+# WORK
 
-if __name__ == "__main__":
-	search()
+words = getWord()
+
+# create / connect to db
+conn = sqlite3.connect(r"./queries.db")
+
+with conn:
+    cur = conn.cursor()
+    # drop Queries
+    try:
+    	cur.execute('''DROP TABLE Queries''')
+    except:
+    	pass
+    # create Queries
+    try:
+    	cur.execute("CREATE TABLE Queries(Id INT, Query TEXT, Url TEXT)")
+    except:
+    	pass
+    i = 0
+    for word in words:
+    	try:
+    		output = search(word)
+    		print output[0]
+    		print output[1]
+    		cur.execute("INSERT INTO Queries VALUES(?,?,?)", (i, output[0], output[1]))
+    		i += 1
+    		conn.commit()
+    	except:
+    		print('Error')
+    		pass
+    	sleep(3)

@@ -1,4 +1,3 @@
-- split list into several files to go faster
 - og
 - google-image-quiz.net
 - database
