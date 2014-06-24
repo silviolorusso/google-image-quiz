@@ -30,7 +30,7 @@ $('.query').on('input', function() {
 $('.query').on('focus', function() {
 	setTimeout(function(){
 		$(this).selectRange(0,1);
-	}, 100);
+	}, 1000);
 });
 
 // get user query
