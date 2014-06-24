@@ -36,7 +36,6 @@ body {
 
 	text-align: center;
 	text-transform: uppercase;
-	font-weight: bold;
 	font-size: 16px;
 }
 .query:hover {
@@ -44,6 +43,9 @@ body {
 }
 .query:active {
 	border-color: #4285f4;
+}
+.query:last-child {
+	margin-right: 0;
 }
 
 #try {
@@ -80,6 +82,9 @@ body {
 	-webkit-border-bottom-left-radius: 0;
 	color: white;
 	cursor: pointer;
+	margin-left: -4px;
+	position: relative;
+	top: -1px;
 }
 
 .hint {
