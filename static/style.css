@@ -43,11 +43,7 @@ body {
 }
 
 /* show different image */
-#smc {
-	margin: 16px auto;
-	width: 506px;
-}
-#smb {
+#newpic {
 	background-repeat: repeat-x;
 	padding: 0;
 	width: 200px;
