@@ -183,7 +183,7 @@ body {
 	float: left;
 }
 footer, .push {
-	height: 155px; /* '.push' must be the same height as 'footer' */
+	height: 41px; /* '.push' must be the same height as 'footer' */
 }
 footer {
 	background: #f2f2f2;
