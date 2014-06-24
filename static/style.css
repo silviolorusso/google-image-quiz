@@ -134,9 +134,14 @@ body {
 	max-width: 540px;
 	position: absolute;
 	z-index: 99999999;
-	top: 50px;
-	left: auto;
-	right: auto;
+	top: 200px;
+	text-align: center;
+	font-size: 1.5em;
+	color: #666;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 footer {
