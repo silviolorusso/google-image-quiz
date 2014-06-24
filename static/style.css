@@ -163,6 +163,13 @@ body {
 	margin-right: auto;
 }
 
+#social {
+	position: absolute;
+	width: 500px;
+	top: 0;
+	right: 0;
+}
+
 footer {
 	background: #f2f2f2;
 	border-top: 1px solid #e4e4e4;
