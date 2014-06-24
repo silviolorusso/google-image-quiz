@@ -39,7 +39,7 @@ $('.query').on('focus', function() {
 	field = $(this);
 	$('html').keyup(function(e){
     if ((e.keyCode == 8) && ($(this).val() === '')) {
-    	alert('Backspace');
+    	field.prev().selectRange(0,1);
     }
 	}) 
 });
