@@ -51,7 +51,8 @@ $('#try').click( function(){
 		$('#background, .alert').toggle(function(){
 			setTimeout(function(){
 				$('#background, .alert').toggle();
-			}, 1000)
+				console.log('yo');
+			}, 1000);
 		});
 	}
 });
