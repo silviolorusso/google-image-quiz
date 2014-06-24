@@ -46,8 +46,16 @@ $('#try').click( function(event){
 	event.preventDefault();
 	attempts++;
 	if (getUsrQuery() == query) {
-		$('#attempts').append(attempts);
-		$('#hints').append(hints);
+		if (attempts === 1) {
+			$('#attempts').append(attempts + ' attempt');
+		} else {
+			$('#attempts').append(attempts + ' attempts');
+		}
+		if (attempts === 1) {
+			$('#hints').append(hints + ' hint');
+		else {
+			$('#hints').append(hints + ' hints');
+		}
 		$('#background, #correct').show(0);
 	} else {
 		$('#background, #wrong').show(0, function(){

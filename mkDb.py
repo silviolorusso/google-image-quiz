@@ -69,22 +69,47 @@ with conn:
     for word in words:
     	try:
     		output = search(word)
-    		print output[0]
-    		print output[1]
-    		imgUrl = output[1]
-    		# check if it's a broken link
-    		class HeadRequest(urllib2.Request):
-    			def get_method(self):
-    				return "HEAD"
-				try:
-					response = urllib2.urlopen(HeadRequest(imgUrl))
-				except:
-					pass
-				cur.execute("INSERT INTO Queries VALUES(?,?,?)", (i, output[0], output[1]))
-				conn.commit()
-				i += 1
+    		cur.execute("INSERT INTO Queries VALUES(?,?,?)", (i, output[0], output[1]))
+    		conn.commit()
+    		i += 1
     	except:
     		print('Error')
     		sleep(10)
     		pass
     	sleep(3)
+
+# with conn:
+#     cur = conn.cursor()
+#     # drop Queries
+#     try:
+#     	cur.execute('''DROP TABLE Queries''')
+#     except:
+#     	pass
+#     # create Queries
+#     try:
+#     	cur.execute("CREATE TABLE Queries(Id INT, Query TEXT, Url TEXT)")
+#     except:
+#     	pass
+#     i = 0
+#     for word in words:
+#     	try:
+#     		output = search(word)
+#     		print output[0]
+#     		print output[1]
+#     		imgUrl = output[1]
+#     		# check if it's a broken link
+#     		class HeadRequest(urllib2.Request):
+#     			def get_method(self):
+#     				return "HEAD"
+# 				try:
+# 					response = urllib2.urlopen(HeadRequest(imgUrl))
+# 				except:
+# 					pass
+# 				cur.execute("INSERT INTO Queries VALUES(?,?,?)", (i, output[0], output[1]))
+# 				conn.commit()
+# 				i += 1
+#     	except:
+#     		print('Error')
+#     		sleep(10)
+#     		pass
+#     	sleep(3)
