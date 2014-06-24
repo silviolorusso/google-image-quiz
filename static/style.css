@@ -14,11 +14,11 @@ body {
 	height: auto !important;
 	height: 100%;
 	margin: 0 auto -41px;
+	margin-top: 40px;
 }
 #hplogo {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 40px;
 	margin-bottom: 40px;
 }
 
@@ -188,6 +188,7 @@ footer, .push {
 footer {
 	background: #f2f2f2;
 	border-top: 1px solid #e4e4e4;
+	line-height: 40px;
 	font-size: small;
 	color: #666;
 }
