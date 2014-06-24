@@ -23,6 +23,7 @@ def randWord():
 
 def search(term):
 	fetcher = urllib2.build_opener()
+	fetcher.addheaders = [('User-agent', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36')]
 	searchUrl = "http://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=" + term
 	f = fetcher.open(searchUrl)
 	imgs = simplejson.load(f)
