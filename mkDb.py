@@ -49,7 +49,6 @@ with conn:
     		conn.commit()
     		i += 1
     	except:
-    		print('Error')
-    		sleep(10)
+    		print('Error!')
     		pass
     	sleep(3)

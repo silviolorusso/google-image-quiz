@@ -1,3 +1,1 @@
 - cronjob
-- check broken/forbidden links in mkDb.py (check)
-- generalise functions
