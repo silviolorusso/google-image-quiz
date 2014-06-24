@@ -26,8 +26,20 @@ body {
 }
 
 .query {
+	background: #fff;
+	background-clip: padding-box;
+	border: 1px solid #cdcdcd;
+	border-color: rgba(0,0,0,.15);
+	border-right-width: 0;
+	height: 30px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
 	text-align: center;
 	text-transform: uppercase;
+}
+.query:hover {
+	border-color: rgba(0,0,0,.3);
 }
 
 #try {
