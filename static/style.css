@@ -169,6 +169,9 @@ body {
 	top: 0;
 	right: 0;
 }
+#social * {
+	float: left;
+}
 
 footer {
 	background: #f2f2f2;
