@@ -15,7 +15,7 @@ urls = (
 
 class index:
 	def GET(self):
-		term = search(randWord)
+		term = search(randWord())
 		# be sure google doesn't complain
 		try:
 			print term[0]
