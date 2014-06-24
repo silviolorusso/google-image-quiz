@@ -39,7 +39,7 @@ $('.query').on('focus', function() {
 	field = $(this);
 	$('html').keyup(function(e){
     if ((e.keyCode == 8) && ($(this).val() === '')) {
-    	field.prev().selectRange(0,1);
+    	field.prev().focus();
     }
 	}) 
 });
