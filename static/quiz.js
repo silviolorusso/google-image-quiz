@@ -38,7 +38,7 @@ $('.query').on('focus', function() {
 $('.query').on('focus', function() {
 	field = $(this);
 	$('html').keyup(function(e){
-    if(e.keyCode == 46) && ($(this).val() === '') {
+    if ((e.keyCode == 46) && ($(this).val() === '')) {
     	alert('Delete Key Pressed');
     }
 	}) 
