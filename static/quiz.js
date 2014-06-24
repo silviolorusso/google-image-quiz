@@ -39,7 +39,7 @@ $('.query').on('input', function() {
 	field = $(this);
 	$('html').keyup(function(e){
     if ((e.keyCode == 8) && ($(this).val() === '')) {
-    	field.next().focus();
+    	field.prev().focus();
     }
 	}) 
 });
