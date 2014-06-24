@@ -48,7 +48,6 @@ body {
 	background: linear-gradient(top,#4387fd,#4683ea);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4387fd,endColorstr=#4683ea,GradientType=1);
 
-	cursor: default!important;
 	display: inline-block;
 	font-weight: bold;
 	line-height: 29px;
@@ -64,6 +63,7 @@ body {
 	-webkit-border-top-left-radius: 0;
 	-webkit-border-bottom-left-radius: 0;
 	color: white;
+	cursor: pointer;
 }
 
 .hint {
