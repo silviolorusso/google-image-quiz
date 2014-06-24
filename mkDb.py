@@ -76,5 +76,6 @@ with conn:
     		conn.commit()
     	except:
     		print('Error')
+    		sleep(10)
     		pass
     	sleep(3)
