@@ -37,7 +37,7 @@ $('.query').on('focus', function() {
 // on del press, if it's empty, go back to prev form 
 $('.query').on('focus', function() {
 	field = $(this);
-	$('html').keyup(function(e){
+	$('html').keydown(function(e){
     if ((e.keyCode == 8) && (field.val() === '')) {
     	field.prev().focus();
     }
