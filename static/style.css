@@ -13,7 +13,7 @@ body {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -41px;
+	margin: 0 auto -42px;
 }
 header {
 	padding-top: 40px;
@@ -185,7 +185,7 @@ header {
 	float: left;
 }
 footer, .push {
-	height: 41px; /* '.push' must be the same height as 'footer' */
+	height: 42px; /* '.push' must be the same height as 'footer' */
 }
 footer {
 	background: #f2f2f2;
