@@ -14,6 +14,8 @@ body {
 	height: auto !important;
 	height: 100%;
 	margin: 0 auto -41px;
+}
+header {
 	padding-top: 40px;
 }
 #hplogo {
