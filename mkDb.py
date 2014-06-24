@@ -71,9 +71,18 @@ with conn:
     		output = search(word)
     		print output[0]
     		print output[1]
-    		cur.execute("INSERT INTO Queries VALUES(?,?,?)", (i, output[0], output[1]))
-    		i += 1
-    		conn.commit()
+    		imgUrl = output[1]
+    		# check if it's a broken link
+    		class HeadRequest(urllib2.Request):
+    			def get_method(self):
+    				return "HEAD"
+				try:
+					response = urllib2.urlopen(HeadRequest(imgUrl))
+				except:
+					pass
+				cur.execute("INSERT INTO Queries VALUES(?,?,?)", (i, output[0], output[1]))
+				conn.commit()
+				i += 1
     	except:
     		print('Error')
     		sleep(10)
