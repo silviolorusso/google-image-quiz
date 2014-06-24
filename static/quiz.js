@@ -48,11 +48,11 @@ $('#try').click( function(){
 	if (getUsrQuery() == query) {
 		alert('Correct! You guessed the query in ' + attempts + ' attempts using ' + hints + " hints.");
 	} else {
-		$('#background, .alert').show(
+		$('#background, .alert').show(function(){
 			setTimeout(function(){
 				$(this).fadeOut();
 			}, 1000)
-		);
+		});
 	}
 });
 
