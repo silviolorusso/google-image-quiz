@@ -1,3 +1,5 @@
 - og
 - google-image-quiz.net
-- database
+- cronjob
+- check broken links in mkDb.py
+- social in primo piano
