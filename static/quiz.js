@@ -51,7 +51,7 @@ $('#try').click( function(){
 			setTimeout(function(){
 				$(this).fadeOut();
 			}, 1000)
-		});
+		);
 		attempts++;
 	}
 });
