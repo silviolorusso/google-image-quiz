@@ -100,6 +100,6 @@ $('#noluck').click( function(){
 
 
 // new
-$('#newpic').click( function(){
+$('.newpic').click( function(){
 	location.reload();
 });
