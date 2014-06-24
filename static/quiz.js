@@ -38,8 +38,8 @@ $('.query').on('focus', function() {
 $('.query').on('focus', function() {
 	field = $(this);
 	$('html').keyup(function(e){
-    if ((e.keyCode == 8) && ($(this).val() === '')) {
-    	$(this).prev().focus();
+    if ((e.keyCode == 8) && (field.val() === '')) {
+    	field.prev().focus();
     }
 	}) 
 });
