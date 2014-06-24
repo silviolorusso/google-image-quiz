@@ -27,8 +27,8 @@ $('.query').on('input', function() {
 		$(this).next().selectRange(0,1);
 	}
 });
-$('.query').on('focus', function() {
-	setTimeout(function(){
+$('.query').on('focus', function($(this)) {
+	setTimeout(function($(this)){
 		$(this).selectRange(0,1);
 	}, 1000);
 });
