@@ -9,13 +9,9 @@ import urllib2
 import simplejson
 import random
 
-# VARIABLES
-
-searchTerm = 'parrot'
-
 # FUNCTIONS
 
-def getWord():
+def randWord():
 	words = []
 	f = open("list.txt", "r")
 	for line in f:
@@ -25,8 +21,7 @@ def getWord():
 	rand = random.choice(words)
 	return(rand)
 
-def search():
-	term = getWord()
+def search(term):
 	fetcher = urllib2.build_opener()
 	searchUrl = "http://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=" + term
 	f = fetcher.open(searchUrl)
@@ -57,4 +52,4 @@ def search():
 # TEST
 
 if __name__ == "__main__":
-	search()
+	search(randWord)

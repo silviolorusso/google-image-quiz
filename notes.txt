@@ -1,4 +1,3 @@
-- og
-- google-image-quiz.net, delete stuff
 - cronjob
-- check broken links in mkDb.py (check)
+- check broken/forbidden links in mkDb.py (check)
+- generalise functions

@@ -4,7 +4,7 @@
 # MODULES
 
 import web
-from getImgUrl import search
+from getImgUrl import randWord search
 from getImgUrlDb import searchDb
 
 render = web.template.render('templates/')
@@ -15,7 +15,7 @@ urls = (
 
 class index:
 	def GET(self):
-		term = search()
+		term = search(randWord)
 		# be sure google doesn't complain
 		try:
 			print term[0]
