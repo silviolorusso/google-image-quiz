@@ -51,7 +51,7 @@ $('#try').click( function(event){
 		} else {
 			$('#attempts').append(attempts + ' attempts');
 		}
-		if (attempts == 1) {
+		if (hints == 1) {
 			$('#hints').append(hints + ' hint');
 		else {
 			$('#hints').append(hints + ' hints');
