@@ -31,7 +31,7 @@ $('.query').on('focus', function() {
 	field = $(this);
 	setTimeout(function(){
 		field.selectRange(0,1);
-	}, 1000);
+	}, 10);
 });
 
 // get user query
