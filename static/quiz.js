@@ -50,7 +50,7 @@ $('#try').click( function(){
 		$('#background, .alert').show(
 			setTimeout(function(){
 				$(this).fadeOut();
-			}, 1000);
+			}, 1000)
 		});
 		attempts++;
 	}
