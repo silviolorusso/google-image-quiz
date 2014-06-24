@@ -47,7 +47,11 @@ $('#try').click( function(){
 		attempts++;
 		alert('Correct! You guessed the query in ' + attempts + ' attempts using ' + hints + " hints.");
 	} else {
-		alert('Wrong.');
+		$('#background, .alert').show(
+			setTimeout(function(){
+				$(this).fadeOut();
+			}, 1000);
+		});
 		attempts++;
 	}
 });
