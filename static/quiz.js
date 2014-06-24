@@ -56,7 +56,6 @@ $('#try').click( function(event){
 			}, 1200);
 		});
 	}
-	return false;
 });
 
 // hint
