@@ -46,12 +46,12 @@ $('#try').click( function(event){
 	event.preventDefault();
 	attempts++;
 	if (getUsrQuery() == query) {
-		if (attempts === 1) {
+		if (attempts == 1) {
 			$('#attempts').append(attempts + ' attempt');
 		} else {
 			$('#attempts').append(attempts + ' attempts');
 		}
-		if (attempts === 1) {
+		if (attempts == 1) {
 			$('#hints').append(hints + ' hint');
 		else {
 			$('#hints').append(hints + ' hints');
