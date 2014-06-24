@@ -22,7 +22,7 @@ def getWord():
 		# remove /n 
 		line = line.rstrip()
 		words.append(line)
-		rand = random.choice(words)
+	rand = random.choice(words)
 	return(rand)
 
 def search():
