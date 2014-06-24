@@ -123,6 +123,22 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f8f8f8,endColorstr=#f1f1f1,GradientType=1);
 }
 
+.alert {
+	background-color: #fbfbfb;
+	border: 1px solid #AAA;
+	border-bottom: 1px solid #888;
+	border-radius: 3px;
+	color: black;
+	box-shadow: 0px 2px 2px #AAA;
+
+	max-width: 540px;
+	position: absolute;
+	z-index: 99999999;
+	top: 50px;
+	left: auto;
+	right: auto;
+}
+
 footer {
 	background: #f2f2f2;
 	border-top: 1px solid #e4e4e4;
