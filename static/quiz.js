@@ -27,11 +27,21 @@ $('.query').on('input', function() {
 		$(this).next().selectRange(0,1);
 	}
 });
+// select letter on focus
 $('.query').on('focus', function() {
 	field = $(this);
 	setTimeout(function(){
 		field.selectRange(0,1);
 	}, 10);
+});
+// on del press, if it's empty, go back to prev form 
+$('.query').on('focus', function() {
+	field = $(this);
+	$('html').keyup(function(e){
+    if(e.keyCode == 46) && ($(this).val() === '') {
+    	alert('Delete Key Pressed');
+    }
+	}) 
 });
 
 // get user query
