@@ -44,9 +44,6 @@ body {
 .query:active {
 	border-color: #4285f4;
 }
-.query:last-child {
-	margin-right: 0;
-}
 
 #try {
 	border: 1px solid transparent;
@@ -82,7 +79,7 @@ body {
 	-webkit-border-bottom-left-radius: 0;
 	color: white;
 	cursor: pointer;
-	margin-left: -4px;
+	margin-left: -6px;
 	position: relative;
 	top: -1px;
 }
