@@ -38,7 +38,7 @@ $def with (rterm, imgUrl)
 		</form>
 			<button class="button" id="hint" ><span>Hint</span></button>
 			<button class="button" id="noluck" ><span>I don’t feel lucky</span></button>
-			<button class="button" id="newpic" ><span>Show a different image</span></button>
+			<button class="button" id="newpic" ><span>Show a new image</span></button>
 	</section>
 
 	<div id="background">
@@ -46,6 +46,11 @@ $def with (rterm, imgUrl)
 	<div id="wrong" class="alert">
 		<img src="static/dino.png">
 		<span>Aw, snap! The query is wrong.</span>
+	</div>
+	<div id="unlucky" class="alert">
+		<img src="static/dino.png">
+		<span>The query was:</span> “<span class="showQuery"></span>”
+		<button class="button" id="newpic" ><span>Show a new image</span></button>
 	</div>
 
 	<footer>

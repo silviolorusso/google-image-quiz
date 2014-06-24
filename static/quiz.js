@@ -48,9 +48,9 @@ $('#try').click( function(){
 	if (getUsrQuery() == query) {
 		alert('Correct! You guessed the query in ' + attempts + ' attempts using ' + hints + " hints.");
 	} else {
-		$('#background, .alert').show(0, function(){
+		$('#background, #wrong').show(0, function(){
 			setTimeout(function(){
-				$('#background, .alert').hide(0);
+				$('#background, #wrong').hide(0);
 			}, 1200);
 		});
 	}
@@ -93,7 +93,8 @@ $('#noluck').click( function(){
 		$('.query.'+i).attr('readonly', 'readonly');
 		$('.query.'+i).addClass('hint');
 	};
-	alert('Aw, snap! The query was: ' + query );
+	$('.showQuery').append(query);
+	$('#background, #unlucky').show(0);
 });
 		
 
