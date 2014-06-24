@@ -27,6 +27,9 @@ $('.query').on('input', function() {
 		$(this).next().selectRange(0,1);
 	}
 });
+$('.query').on('focus', function() {
+	$(this).selectRange(0,1);
+});
 
 // get user query
 function getUsrQuery() {
