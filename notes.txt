@@ -1,6 +1,4 @@
-- favicon
 - split list into several files to go faster
 - social
-- check browsers
 - google-image-quiz.net
 
