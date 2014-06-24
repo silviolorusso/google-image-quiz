@@ -51,7 +51,7 @@ $('#try').click( function(){
 		$('#background, .alert').show(0, function(){
 			setTimeout(function(){
 				$('#background, .alert').hide(0);
-			}, 1500);
+			}, 1200);
 		});
 	}
 });
