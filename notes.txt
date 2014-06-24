@@ -1,0 +1,6 @@
+- split list into several files to go faster
+- hover button
+- social
+- sticky footer
+
+domain?
