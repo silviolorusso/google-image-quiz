@@ -4,3 +4,5 @@
 - sticky footer
 
 domain?
+google-image-quiz.edu
+google-image-quiz.info

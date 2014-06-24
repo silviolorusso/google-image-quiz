@@ -95,6 +95,6 @@ $('#noluck').click( function(){
 
 
 // new
-$('#smb').click( function(){
+$('#newpic').click( function(){
 	location.reload();
 });
