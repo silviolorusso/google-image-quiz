@@ -69,9 +69,16 @@ with conn:
     for word in words:
     	try:
     		output = search(word)
-    		print output[0]
-    		print output[1]
-    		cur.execute("INSERT INTO Queries VALUES(?,?,?)", (i, output[0], output[1]))
+    		imgUrl = output[1]
+    		# check if it's a broken link
+    		class HeadRequest(urllib2.Request):
+    			def get_method(self):
+    				return "HEAD"
+				try:
+					response = urllib2.urlopen(HeadRequest(imgUrl))
+					cur.execute("INSERT INTO Queries VALUES(?,?,?)", (i, output[0], output[1]))
+				except:
+					print('Error: forbidden!')
     		i += 1
     		conn.commit()
     	except:
