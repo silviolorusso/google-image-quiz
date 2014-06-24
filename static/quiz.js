@@ -46,6 +46,8 @@ $('#try').click( function(){
 	event.preventDefault();
 	attempts++;
 	if (getUsrQuery() == query) {
+		$('#attempts').append(attempts);
+		$('#hints').append(hints);
 		$('#background, #correct').show(0);
 	} else {
 		$('#background, #wrong').show(0, function(){
