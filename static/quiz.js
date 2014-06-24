@@ -50,7 +50,7 @@ $('#try').click( function(){
 	} else {
 		$('#background, .alert').toggle(function(){
 			setTimeout(function(){
-				$(this).toggle();
+				$('#background, .alert'.toggle();
 			}, 1000)
 		});
 	}
