@@ -28,7 +28,9 @@ $('.query').on('input', function() {
 	}
 });
 $('.query').on('focus', function() {
-	$(this).selectRange(0,1);
+	setTimeout(function(){
+		$(this).selectRange(0,1);
+	}, 100);
 });
 
 // get user query
