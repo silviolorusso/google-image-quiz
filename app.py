@@ -5,6 +5,7 @@
 
 import web
 from getImgUrl import search
+from getImgUrlDb import searchDb
 
 render = web.template.render('templates/')
 
