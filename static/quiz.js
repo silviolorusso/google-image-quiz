@@ -48,7 +48,7 @@ $('#try').click( function(){
 	if (getUsrQuery() == query) {
 		alert('Correct! You guessed the query in ' + attempts + ' attempts using ' + hints + " hints.");
 	} else {
-		$('#background, .alert').show(function(){
+		$('#background, .alert').show(0, function(){
 			setTimeout(function(){
 				$('#background, .alert').hide();
 			}, 1000);
