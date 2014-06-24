@@ -6,3 +6,7 @@
 domain?
 google-image-quiz.edu
 google-image-quiz.info
+google-image-quiz.biz
+
+google-image-quiz.net
+
