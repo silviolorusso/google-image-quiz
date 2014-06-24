@@ -1,4 +1,4 @@
 - split list into several files to go faster
-- social
+- og
 - google-image-quiz.net
-
+- database

@@ -1,3 +1,6 @@
+html, body {
+	height: 100%;
+}
 body {
 	width: 100%;
 	margin: 0;
@@ -5,6 +8,12 @@ body {
 	font-family: arial,sans-serif;
 	text-align: center;
 	color: #222;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -41px;
 }
 #hplogo {
 	margin-left: auto;
@@ -173,7 +182,9 @@ body {
 #social * {
 	float: left;
 }
-
+footer, .push {
+	height: 155px; /* '.push' must be the same height as 'footer' */
+}
 footer {
 	background: #f2f2f2;
 	border-top: 1px solid #e4e4e4;
