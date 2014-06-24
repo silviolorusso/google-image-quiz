@@ -42,7 +42,7 @@ function getUsrQuery() {
 
 // try
 attempts = 0
-$('#try').click( function(){
+$('#try').click( function(event){
 	event.preventDefault();
 	attempts++;
 	if (getUsrQuery() == query) {
