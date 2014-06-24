@@ -50,7 +50,7 @@ $('#try').click( function(){
 	} else {
 		$('#background, .alert').show(0, function(){
 			setTimeout(function(){
-				$('#background, .alert').hide();
+				$('#background, .alert').hide(200);
 			}, 1000);
 		});
 	}
