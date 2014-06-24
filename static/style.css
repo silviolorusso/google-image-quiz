@@ -112,6 +112,8 @@ body {
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 	-webkit-user-select: none;
+
+	outline: none;
 }
 .button:hover {
 	border-color: #c6c6c6;
