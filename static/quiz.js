@@ -53,7 +53,7 @@ $('#try').click( function(event){
 		}
 		if (hints == 1) {
 			$('#hints').append(hints + ' hint');
-		else {
+		} else {
 			$('#hints').append(hints + ' hints');
 		}
 		$('#background, #correct').show(0);
