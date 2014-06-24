@@ -76,8 +76,6 @@ body {
 	border-radius: 2px;
 	-webkit-user-select: none;
 
-	-webkit-border-top-left-radius: 0;
-	-webkit-border-bottom-left-radius: 0;
 	color: white;
 	cursor: pointer;
 	position: relative;
