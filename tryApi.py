@@ -11,7 +11,7 @@ from time import sleep
 # WORK
 
 while True:
-	term = search()
+	term = search(randWord())
 	try:
 		print term[0]
 		print term[1]

@@ -1,7 +1,7 @@
 #!/home2/silviolo/python/bin/python 
 # -*- coding: utf-8 -*-
 
-# Create Db with query, image url
+# Create Db with query, image url - deprecated because Google complains
 
 # MODULES
 
