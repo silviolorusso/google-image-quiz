@@ -46,14 +46,10 @@ with conn:
     	pass
     i = 0
     for word in words:
-    	try:
-    		output = searchScrape(word)
-    		cur.execute("INSERT INTO Queries VALUES(?,?,?)", (i, output[0], output[1]))
-    		conn.commit()
-    		i += 1
-    	except:
-    		print('Error!')
-    		pass
+		output = searchScrape(word)
+		cur.execute("INSERT INTO Queries VALUES(?,?,?)", (i, output[0], output[1]))
+		conn.commit()
+		i += 1
     	sleep(1)
 
 # move to actual db
