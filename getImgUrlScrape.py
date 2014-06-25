@@ -39,7 +39,7 @@ def searchScrape(term):
 		response = urllib2.urlopen(HeadRequest(imgUrl))
 	except:
 		print('Error: forbidden!')
-		searchScrape(term)
+		return
 	# reverse the query
 	rterm = term[::-1]
 	print(rterm + ' ' + imgUrl)

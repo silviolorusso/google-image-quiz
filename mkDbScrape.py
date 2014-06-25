@@ -54,7 +54,7 @@ with conn:
     	except:
     		print('Error!')
     		pass
-    	sleep(2)
+    	sleep(1)
 
 # move to actual db
 os.rename("./queries-temp.db", "./queries.db")
