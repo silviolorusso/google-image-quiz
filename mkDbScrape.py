@@ -24,8 +24,8 @@ def getWords():
 
 # WORK
 
-# get to current path
-os.chdir(os.path.realpath(__file__))
+# get to script dir, for the cron job
+os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 words = getWords()
 
