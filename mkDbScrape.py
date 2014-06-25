@@ -9,7 +9,7 @@ import sqlite3
 import urllib2
 from getImgUrlScrape import searchScrape
 from time import sleep
-import os
+import os, shutil
 import random
 
 # FUNCTIONS
@@ -31,7 +31,7 @@ os.chdir(os.path.dirname(os.path.realpath(__file__)))
 words = getWords()
 
 # get random sample, otherwise takes ages to build the db
-rand_smpl = [ words[i] for i in sorted(random.sample(xrange(len(words)), 5000)) ]
+rand_smpl = [ words[i] for i in sorted(random.sample(xrange(len(words)), 10)) ]
 
 # create / connect to db
 conn = sqlite3.connect(r"./queries-temp.db")
@@ -60,8 +60,9 @@ with conn:
     		pass
     	sleep(1)
 
-# move to actual db
-os.rename("./queries-temp.db", "./queries.db")
+# copy to actual db
+#os.rename("./queries-temp.db", "./queries.db")
+shutil.copy2('./queries-temp.db', './queries.db')
 
 # done
 print("Database updated.")
