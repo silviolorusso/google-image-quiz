@@ -58,3 +58,6 @@ with conn:
 
 # move to actual db
 os.rename("./queries-temp.db", "./queries.db")
+
+# done
+print("Database updated.")
