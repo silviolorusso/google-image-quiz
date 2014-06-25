@@ -46,11 +46,15 @@ with conn:
     	pass
     i = 0
     for word in words:
-      output = searchScrape(word)
-      cur.execute("INSERT INTO Queries VALUES(?,?,?)", (i, output[0], output[1]))
-      conn.commit()
-      i += 1
-    sleep(1)
+    	try:
+    		output = searchScrape(word)
+    		cur.execute("INSERT INTO Queries VALUES(?,?,?)", (i, output[0], output[1]))
+    		conn.commit()
+    		i += 1
+    	except:
+    		print('Error!')
+    		pass
+    	sleep(2)
 
 # move to actual db
 os.rename("./queries-temp.db", "./queries.db")
