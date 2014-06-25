@@ -27,7 +27,7 @@ def searchScrape(term):
 	searchUrl = "http://google.com/images?source=hp&q=" + term
 	req = urllib2.Request(searchUrl, None, headers)
 	html = urllib2.urlopen(req).read()
-	soup = BeautifulSoup(html)
+	soup = BeautifulSoup(html, "lxml")
 	links = soup.findAll("a", { "class" : "rg_l" })
 	messyLink = links[0].get("href")
 	imgUrl = re.search( r'imgurl=(.*)&imgrefurl', messyLink).groups()[0]
@@ -39,7 +39,7 @@ def searchScrape(term):
 		response = urllib2.urlopen(HeadRequest(imgUrl))
 	except:
 		print('Error: forbidden!')
-		searchScrape()
+		searchScrape(term)
 	# reverse the query
 	rterm = term[::-1]
 	print(rterm + ' ' + imgUrl)
