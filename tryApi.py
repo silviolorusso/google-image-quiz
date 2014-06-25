@@ -4,7 +4,7 @@
 # MODULES
 
 import web
-from getImgUrl import search
+from getImgUrl import search, randWord
 from getImgUrlDb import searchDb
 from time import sleep
 
