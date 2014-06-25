@@ -14,13 +14,13 @@ import os
 # FUNCTIONS
 
 def getWords():
-	words = []
-	f = open("list.txt", "r")
-	for line in f:
-		# remove /n 
-		line = line.rstrip()
-		words.append(line)
-	return words
+  words = []
+  f = open("list.txt", "r")
+  for line in f:
+    # remove /n
+    line = line.rstrip()
+    words.append(line)
+  return words
 
 # WORK
 
