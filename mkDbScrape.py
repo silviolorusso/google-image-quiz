@@ -10,6 +10,7 @@ import urllib2
 from getImgUrlScrape import searchScrape
 from time import sleep
 import os
+import random
 
 # FUNCTIONS
 
@@ -29,6 +30,10 @@ os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 words = getWords()
 
+# get random sample, otherwise takes ages to build the db
+rand_smpl = [ words[i] for i in sorted(random.sample(xrange(len(words)), 3000)) ]
+
+
 # create / connect to db
 conn = sqlite3.connect(r"./queries-temp.db")
 
@@ -45,7 +50,7 @@ with conn:
     except:
     	pass
     i = 0
-    for word in words:
+    for word in rand_smpl:
     	try:
     		output = searchScrape(word)
     		cur.execute("INSERT INTO Queries VALUES(?,?,?)", (i, output[0], output[1]))
