@@ -8,7 +8,7 @@ $( document ).ready(function() {
 		$('#form').prepend( '<input type="text" size="1" maxlength="1" class="query ' + i + ' ">' );
 	};
 	$('.query.0').focus();
-};
+});
 // after writing go to next box and select letter
 $.fn.selectRange = function(start, end) {
     if(!end) end = start; 
