@@ -15,7 +15,7 @@ import os
 
 def getWords():
   words = []
-  f = open("./list.txt", "r")
+  f = open("list.txt", "r")
   for line in f:
     # remove /n
     line = line.rstrip()
@@ -23,6 +23,9 @@ def getWords():
   return words
 
 # WORK
+
+# get to current path
+os.chdir(os.path.realpath(__file__))
 
 words = getWords()
 
