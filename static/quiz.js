@@ -6,6 +6,7 @@ query = queryName.attr("content").split("").reverse().join("");
 $( document ).ready(function() {
 	for (var i = query.length - 1; i >= 0; i--) {
 		$('#form').prepend( '<input type="text" size="1" maxlength="1" class="query ' + i + ' ">' );
+	};
 	$('.query.0').focus();
 };
 // after writing go to next box and select letter
