@@ -31,7 +31,7 @@ os.chdir(os.path.dirname(os.path.realpath(__file__)))
 words = getWords()
 
 # get random sample, otherwise takes ages to build the db
-rand_smpl = [ words[i] for i in sorted(random.sample(xrange(len(words)), 5000)) ]
+rand_smpl = [ words[i] for i in sorted(random.sample(xrange(len(words)), 1000)) ]
 
 # create / connect to db
 conn = sqlite3.connect(r"./queries-temp.db")
