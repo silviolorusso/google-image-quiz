@@ -61,7 +61,6 @@ with conn:
     	sleep(1)
 
 # copy to actual db
-#os.rename("./queries-temp.db", "./queries.db")
 shutil.copy2('./queries-temp.db', './queries.db')
 
 # done
