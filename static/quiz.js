@@ -129,8 +129,6 @@ $('#noluck').click( function(){
 	$('#background, #unlucky').show(0);
 });
 		
-
-
 // new
 $('.newpic').click( function(){
 	location.reload();
