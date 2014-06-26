@@ -11,6 +11,7 @@ from getImgUrlScrape import searchScrape
 from time import sleep
 import os, shutil
 import random
+from lock import checkExec
 
 # FUNCTIONS
 
@@ -27,6 +28,9 @@ def getWords():
 
 # get to script dir, for the cron job
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
+
+# bluehost cron twice issue
+checkExec()
 
 words = getWords()
 
