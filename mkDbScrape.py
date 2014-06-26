@@ -34,8 +34,8 @@ checkExec()
 
 words = getWords()
 
-# get random sample, otherwise takes ages to build the db. 1200 because some queries fail
-rand_smpl = [ words[i] for i in sorted(random.sample(xrange(len(words)), 1200)) ]
+# get random sample, otherwise takes ages to build the db.
+rand_smpl = [ words[i] for i in sorted(random.sample(xrange(len(words)), 650)) ]
 
 # create / connect to db
 conn = sqlite3.connect(r"./queries-temp.db")
