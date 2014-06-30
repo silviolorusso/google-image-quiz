@@ -32,9 +32,11 @@ $('.query').on('input', function() {
 // select letter on focus
 $('.query').on('focus', function() {
 	field = $(this);
-	setTimeout(function(){
-		field.selectRange(0,1);
-	}, 10);
+	if (!field.hasClass('hint')) {
+		setTimeout(function(){
+			field.selectRange(0,1);
+		}, 10);
+	}
 });
 // on del press, if it's empty, go back to prev form 
 $('.query').on('focus', function() {
