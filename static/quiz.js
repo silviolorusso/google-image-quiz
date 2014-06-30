@@ -79,6 +79,7 @@ $('#try').click( function(event){
 			$('#hints').append(hints + ' hints');
 		}
 		$('#background, #correct').show(0);
+		$('#correct button').focus;
 	} else {
 		$('#background, #wrong').show(0, function(){
 			setTimeout(function(){
