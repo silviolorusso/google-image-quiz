@@ -127,8 +127,8 @@ $('#noluck').click( function(){
 		$('.query.'+i).attr('readonly', 'readonly');
 		$('.query.'+i).addClass('hint');
 	};
-	$('.showQuery').append(query);
 	if ($('#unlucky').css('display') == 'none') {
+		$('.showQuery').append(query);
 		$('#background, #unlucky').show(0);
 	}
 });
