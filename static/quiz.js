@@ -68,18 +68,19 @@ $('#try').click( function(event){
 	event.preventDefault();
 	attempts++;
 	if (getUsrQuery() == query) {
-		if (attempts == 1) {
-			$('#attempts').append(attempts + ' attempt');
-		} else {
-			$('#attempts').append(attempts + ' attempts');
+		if ($('#background, #correct').not(":visible")) {
+			if (attempts == 1) {
+				$('#attempts').append(attempts + ' attempt');
+			} else {
+				$('#attempts').append(attempts + ' attempts');
+			}
+			if (hints == 1) {
+				$('#hints').append(hints + ' hint');
+			} else {
+				$('#hints').append(hints + ' hints');
+			}
+			$('#background, #correct').show(0);
 		}
-		if (hints == 1) {
-			$('#hints').append(hints + ' hint');
-		} else {
-			$('#hints').append(hints + ' hints');
-		}
-		$('#background, #correct').show(0);
-		$('#correct button').focus;
 	} else {
 		$('#background, #wrong').show(0, function(){
 			setTimeout(function(){
