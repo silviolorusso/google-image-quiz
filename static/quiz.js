@@ -68,7 +68,7 @@ $('#try').click( function(event){
 	event.preventDefault();
 	attempts++;
 	if (getUsrQuery() == query) {
-		if ($(this).css('display') == 'none') {
+		if ($('#correct').css('display') == 'none') {
 			if (attempts == 1) {
 				$('#attempts').append(attempts + ' attempt');
 			} else {
