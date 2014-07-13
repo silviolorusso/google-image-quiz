@@ -13,21 +13,11 @@ urls = (
   '/', 'index'
 )
 
-# class index:
-# 	def GET(self):
-# 		term = search(randWord())
-# 		# be sure google doesn't complain
-# 		try:
-# 			print term[0]
-# 			print term[1]
-# 		# else pick term from db
-# 		except:
-# 		 	term = searchDb()
-# 		return render.index(term[0], term[1])
-
 class index:
 	def GET(self):
 		term = searchDb()
+    # direct query to Google:
+    # term = search(randWord())
 		return render.index(term[0], term[1])
 
 web.wsgi.runwsgi = lambda func, addr=None: web.wsgi.runfcgi(func, addr)
